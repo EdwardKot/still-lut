@@ -1,0 +1,50 @@
+# Build artifacts
+.build/
+dist/
+
+# Swift Package Manager
+.swiftpm/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Development and testing (kept separately in dev/ folder)
+dev/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+
+# Test outputs
+*.tiff
+*.cube
+
+# Virtual environments
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Package
+*.dSYM/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+Entitlements.plist
