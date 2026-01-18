@@ -109,17 +109,38 @@ Sony ARW → S-Log3 Conversion → Color Grade LUT → TIFF 16-bit
 
 ---
 
-## 🛠️ Installation
+## 🚀 Quick Deployment
 
-### Building from Source
+### One-Click Deployment (Recommended)
 
-#### Prerequisites
+For the easiest installation, use the quick deploy script:
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/still-lut.git
+cd still-lut
+
+# Run one-click deployment
+./quick_deploy.sh
+```
+
+This script will automatically:
+- ✅ Check system requirements
+- ✅ Install LibRaw via Homebrew (if needed)
+- ✅ Build the .app bundle
+- ✅ Verify installation
+
+The app will be ready at `dist/RawToLog.app`.
+
+## 🛠️ Manual Installation
+
+### Prerequisites
 
 1. **macOS 14.0 (Sonoma)** or higher
 2. **Swift 5.9+** (included with Xcode 15.0+)
 3. **LibRaw** - C library for RAW decoding
 
-#### Install LibRaw (Required)
+### Install LibRaw (Required)
 
 **Using Homebrew (recommended):**
 ```bash
@@ -137,7 +158,7 @@ make
 sudo make install
 ```
 
-#### Build the App
+### Build App
 
 ```bash
 # Clone repository
